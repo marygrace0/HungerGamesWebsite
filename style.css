@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: pink;
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+#home {
+    background-color: skyblue;
+    padding: 20px;
+}
+
+.personal-aspects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.personal-aspects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about {
+    background-color: #f0f0f0;
+    padding: 30px;
+}
+
+.grp{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#social-network {
+    background-color: violet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .personal-aspects {
+        margin: 0 5%;
+    }
+
+    .personal-aspects img {
+        max-width: 90%;
+    }
+}
